@@ -196,3 +196,5 @@ need to start from first step.
 
 did all the primary steps and add bootstrap and make changes in layout.
 added theme SKETCHY
+
+add dropdown navigation and tested again works well
