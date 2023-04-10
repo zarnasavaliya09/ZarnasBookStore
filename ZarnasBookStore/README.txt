@@ -215,3 +215,5 @@ review SQL server explorer
 now add Category class in models folder.
 add migration and update migration
 review the SQL server explorer  
+
+create Repository folder and inside Repository create interface file and also create class that implements interface

@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ZarnasBooks.DataAccess.Repository;
+using ZarnasBooks.DataAccess.Repository.IRepository;
 using ZarnasBookStore.DataAccess.Data;
 
 namespace ZarnasBookStore
@@ -32,6 +34,7 @@ namespace ZarnasBookStore
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>()//(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork,UnitOfWork>();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
