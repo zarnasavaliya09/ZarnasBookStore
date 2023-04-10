@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 using ZarnasBookStore.Models;
 using ZarnasBookStore.Models.ViewModels;
 
-namespace ZarnasBookStore.Controllers
+namespace ZarnasBookStore.Area.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
