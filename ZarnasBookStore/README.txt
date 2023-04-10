@@ -194,3 +194,5 @@ add the controllser names CategoryController.cs inside Admin Area
 need to start again.i placed solution in same directory so it's not showing in githhub
 need to start from first step.
 
+did all the primary steps and add bootstrap and make changes in layout.
+added theme SKETCHY
