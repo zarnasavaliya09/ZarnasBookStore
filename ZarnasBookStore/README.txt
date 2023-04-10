@@ -213,3 +213,5 @@ then update the migration file and update database
 review SQL server explorer
 
 now add Category class in models folder.
+add migration and update migration
+review the SQL server explorer  
