@@ -199,3 +199,7 @@ added theme SKETCHY
 
 add dropdown navigation and tested again works well
 added three new class library DataAccess,Models and Utility
+
+added frmework library and delete class.cs file from all three project
+add project reference and update namespace run again
+working well...

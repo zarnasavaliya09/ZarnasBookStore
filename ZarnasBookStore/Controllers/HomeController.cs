@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using ZarnasBookStore.Models;
+using ZarnasBookStore.Models.ViewModels;
 
 namespace ZarnasBookStore.Controllers
 {

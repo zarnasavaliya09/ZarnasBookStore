@@ -1,6 +1,6 @@
 using System;
 
-namespace ZarnasBookStore.Models
+namespace ZarnasBookStore.Models.ViewModels
 {
     public class ErrorViewModel
     {
