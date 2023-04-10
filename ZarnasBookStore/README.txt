@@ -217,3 +217,7 @@ add migration and update migration
 review the SQL server explorer  
 
 create Repository folder and inside Repository create interface file and also create class that implements interface
+
+1717
+now perform Category CRUD operations
+add the CategoryController.cs inside the Admin area
