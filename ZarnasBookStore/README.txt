@@ -203,3 +203,6 @@ added three new class library DataAccess,Models and Utility
 added frmework library and delete class.cs file from all three project
 add project reference and update namespace run again
 working well...
+
+1442
+Add two Area Admin and customer and add the view folder and delete the controller folder
