@@ -221,3 +221,5 @@ create Repository folder and inside Repository create interface file and also cr
 1717
 now perform Category CRUD operations
 add the CategoryController.cs inside the Admin area
+
+add new index file name Index.cshtml into Views
