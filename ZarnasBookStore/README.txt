@@ -206,3 +206,10 @@ working well...
 
 1442
 Add two Area Admin and customer and add the view folder and delete the controller folder
+Add the migration using add-midrtion command
+20230410191846_AddDefaultIdentityMigration.cs
+
+then update the migration file and update database
+review SQL server explorer
+
+now add Category class in models folder.
