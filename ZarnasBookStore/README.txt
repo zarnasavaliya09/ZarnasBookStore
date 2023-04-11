@@ -223,3 +223,10 @@ now perform Category CRUD operations
 add the CategoryController.cs inside the Admin area
 
 add new index file name Index.cshtml into Views
+20230411
+1604
+add layout path and copy the indexview code from the folder.
+
+save and run the application
+add this category into dropdown 
+run and reviewe changes
