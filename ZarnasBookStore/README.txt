@@ -229,4 +229,8 @@ add layout path and copy the indexview code from the folder.
 
 save and run the application
 add this category into dropdown 
-run and reviewe changes
+run and review changes
+
+modify the index.cshtml icon in the category section and check it.
+now add the category.js file into wwwroot/js folder
+in index file add the @section and call the category.js file

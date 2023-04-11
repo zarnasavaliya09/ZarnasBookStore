@@ -23,6 +23,7 @@ namespace ZarnasBookStore.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             var allObj = _unitOfWork.Category.GetAll();
+            Console.WriteLine(allObj);
             return Json(new { data = allObj });
         }
         #endregion
