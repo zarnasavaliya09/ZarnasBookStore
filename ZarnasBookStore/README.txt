@@ -244,3 +244,6 @@ copy and add the code from Category Updsert view
 
 create partial view for edit and back and add the view in shared folder
 now create another partial view for edit and back button and add the @model razor statement inside it.
+
+modify the Upsert.cshtml to @title variable
+add the @section call to validate input on the client side test.
