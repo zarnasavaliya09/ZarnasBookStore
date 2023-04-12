@@ -241,3 +241,6 @@ run and review changes
 to activate update and delete button create New Category using Upsert action
 add the IAction result in the controller and add the view as like index file 
 copy and add the code from Category Updsert view
+
+create partial view for edit and back and add the view in shared folder
+now create another partial view for edit and back button and add the @model razor statement inside it.
