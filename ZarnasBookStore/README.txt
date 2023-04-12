@@ -234,3 +234,10 @@ run and review changes
 modify the index.cshtml icon in the category section and check it.
 now add the category.js file into wwwroot/js folder
 in index file add the @section and call the category.js file
+
+run and review changes
+20230412
+0933
+to activate update and delete button create New Category using Upsert action
+add the IAction result in the controller and add the view as like index file 
+copy and add the code from Category Updsert view
