@@ -250,4 +250,11 @@ add the @section call to validate input on the client side test.
 
 2109
 getting an error while loading category.cs file in browser
+and not showing add category
+
+20230413
+1626
+move to part 3 CoverType CRUD
+create model class CoverType.cs and add the property id and name
+add CoverTypeRepository class and interface
 
