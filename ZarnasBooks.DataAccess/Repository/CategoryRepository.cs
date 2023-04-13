@@ -17,7 +17,7 @@ namespace ZarnasBooks.DataAccess.Repository
         }  
         public void Update(Category category)
         {
-            var objFromDb = _db.Categories.FirstOrDefault();
+            var objFromDb = _db.Categories.FirstOrDefault(s=>s.Id==category.Id);
             if (objFromDb != null)
             {
                 objFromDb.Name = category.Name;

@@ -247,3 +247,7 @@ now create another partial view for edit and back button and add the @model razo
 
 modify the Upsert.cshtml to @title variable
 add the @section call to validate input on the client side test.
+
+2109
+getting an error while loading category.cs file in browser
+
