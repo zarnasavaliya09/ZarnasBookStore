@@ -2,7 +2,7 @@
 
 namespace ZarnasBooks.DataAccess.Migrations
 {
-    public partial class AddCategoryToDb1 : Migration
+    public partial class AddCategoryToDb1: Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
