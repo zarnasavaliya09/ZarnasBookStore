@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using ZarnasBooks.DataAccess.Repository.IRepository;
+using ZarnasBooks.Models;
 using ZarnasBookStore.DataAccess.Data;
 
 namespace ZarnasBooks.DataAccess.Repository
@@ -13,11 +14,15 @@ namespace ZarnasBooks.DataAccess.Repository
         {
             _db = db;
             Category = new CategoryRepository(_db);
-            SP_Call = new SP_Call(_db); 
+            SP_Call = new SP_Call(_db);
+            CoverType = new CoverTypeRepository(_db); 
         }
         public ICategoryRepository Category { get; private set; }
 
         public ISP_Call SP_Call { get; private set; }
+        public CoverTypeRepository CoverType { get; private set; }
+
+        public ICoverTypeRepository Cover => throw new NotImplementedException();
 
         public void Dispose()
         {
