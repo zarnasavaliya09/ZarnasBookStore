@@ -10,7 +10,7 @@ namespace ZarnasBooks.DataAccess.Repository.IRepository
         ICategoryRepository Category { get; }
         ISP_Call SP_Call { get; }
 
-        ICoverTypeRepository Cover { get; }
+        ICoverTypeRepository CoverType { get; }
 
         void Save();
     }
