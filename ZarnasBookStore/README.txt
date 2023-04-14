@@ -271,5 +271,7 @@ and update the database
 review the Product table from SQL explorer
 
 add a required validation in Title,ISBN and author and add migration,update database
-add a product to Repository
+add a product to Repository,IProductRepository and add update method inside it
+add a product to UnitOfWork and IUnitOfWork
+build and check error
 
