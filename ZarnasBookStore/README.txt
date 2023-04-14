@@ -261,4 +261,5 @@ add CoverTypeRepository class and interface
 20230414
 1119
 modify covettypecontroller and covertyperepository
-
+add a Product class in .DataAccess and make it public
+add reference of new Product in ApplicationDbContext.cs
