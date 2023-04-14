@@ -269,3 +269,6 @@ add midration to addProductToDb and create migration file name
 20230414155433_addProductToDb.cs
 and update the database
 review the Product table from SQL explorer
+
+add a required validation in Title,ISBN and author and add migration,update database
+
