@@ -5,6 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using ZarnasBooks.DataAccess.Repository.IRepository;
+using ZarnasBooks.Models;
 using ZarnasBookStore.DataAccess.Data;
 
 namespace ZarnasBooks.DataAccess.Repository
@@ -85,6 +86,24 @@ namespace ZarnasBooks.DataAccess.Repository
         public void RemoveRange(IEnumerable<T> entity)
         {
             dbSet.RemoveRange(entity);
+        }
+        public void Update(Product product)
+        {
+            var objFromDb = _db.Products.FirstOrDefault(s => s.Id == product.Id);
+            if (objFromDb != null)
+            {
+                if (product.ImageUrl != null)
+                {
+                    objFromDb.ImageUrl = product.ImageUrl;
+                }
+                objFromDb.Title = product.Title;
+                objFromDb.Description = product.Description;
+                objFromDb.ISBN = product.ISBN;
+                objFromDb.Author = product.Author;
+                objFromDb.ListPrice = product.ListPrice;
+                objFromDb.CategoryId = product.CategoryId;
+                objFromDb.CoverTypeId = product.CoverTypeId;
+            }
         }
     }
 }

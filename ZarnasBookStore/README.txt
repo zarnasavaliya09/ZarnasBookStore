@@ -271,4 +271,5 @@ and update the database
 review the Product table from SQL explorer
 
 add a required validation in Title,ISBN and author and add migration,update database
+add a product to Repository
 
