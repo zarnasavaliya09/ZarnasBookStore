@@ -275,3 +275,5 @@ add a product to Repository,IProductRepository and add update method inside it
 add a product to UnitOfWork and IUnitOfWork
 build and check error
 
+added index file and upsert layout file
+
