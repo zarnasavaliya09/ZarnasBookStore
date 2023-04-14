@@ -258,3 +258,7 @@ move to part 3 CoverType CRUD
 create model class CoverType.cs and add the property id and name
 add CoverTypeRepository class and interface
 
+20230414
+1119
+modify covettypecontroller and covertyperepository
+
