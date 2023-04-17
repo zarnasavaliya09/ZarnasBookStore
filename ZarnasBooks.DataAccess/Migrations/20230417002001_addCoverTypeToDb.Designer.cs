@@ -10,8 +10,8 @@ using ZarnasBookStore.DataAccess.Data;
 namespace ZarnasBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230414155433_addProductToDb")]
-    partial class addProductToDb
+    [Migration("20230417002001_addCoverTypeToDb")]
+    partial class addCoverTypeToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -263,6 +263,7 @@ namespace ZarnasBooks.DataAccess.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Author")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("CategoryId")
@@ -275,6 +276,7 @@ namespace ZarnasBooks.DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ISBN")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
@@ -284,6 +286,7 @@ namespace ZarnasBooks.DataAccess.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

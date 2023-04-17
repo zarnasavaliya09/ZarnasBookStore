@@ -2,12 +2,12 @@
 
 namespace ZarnasBooks.DataAccess.Migrations
 {
-    public partial class AddCoverTypeToDb : Migration
+    public partial class addCoverTypeToDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-               name: "CoverType",
+               name: "CoverTypes",
                columns: table => new
                {
                    Id = table.Column<int>(nullable: false)
@@ -16,14 +16,14 @@ namespace ZarnasBooks.DataAccess.Migrations
                },
                constraints: table =>
                {
-                   table.PrimaryKey("PK_CoverType", x => x.Id);
+                   table.PrimaryKey("PK_CoverTypes", x => x.Id);
                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "CoverType");
+                name: "CoverTypes");
         }
     }
 }

@@ -63,21 +63,25 @@ namespace ZarnasBookStore
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapAreaControllerRoute(
-                    name: "defaultArea",
-                    areaName: "Customer",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapRazorPages();
-                endpoints.MapAreaControllerRoute(
-                    name: "defaultArea",
-                    areaName: "CoverType",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapRazorPages();
+                /* endpoints.MapAreaControllerRoute(
+                     name: "defaultArea",
+                     areaName: "Customer",
+                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                 endpoints.MapRazorPages();
+                 endpoints.MapAreaControllerRoute(
+                     name: "defaultArea",
+                     areaName: "CoverType",
+                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                 endpoints.MapRazorPages();
 
-                endpoints.MapAreaControllerRoute(
-                    name: "defaultArea",
-                    areaName: "Admin",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                 endpoints.MapAreaControllerRoute(
+                     name: "defaultArea",
+                     areaName: "Admin",
+                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                 endpoints.MapRazorPages();*/
+                endpoints.MapControllerRoute(
+                     name: "default",
+                     pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
