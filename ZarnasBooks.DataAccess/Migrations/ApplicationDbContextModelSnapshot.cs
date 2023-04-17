@@ -250,7 +250,7 @@ namespace ZarnasBooks.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CoverType");
+                    b.ToTable("CoverTypes");
                 });
 
             modelBuilder.Entity("ZarnasBooks.Models.Product", b =>

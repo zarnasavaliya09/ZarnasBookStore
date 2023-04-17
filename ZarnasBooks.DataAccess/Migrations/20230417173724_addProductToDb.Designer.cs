@@ -10,7 +10,7 @@ using ZarnasBookStore.DataAccess.Data;
 namespace ZarnasBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230417002238_addProductToDb")]
+    [Migration("20230417173724_addProductToDb")]
     partial class addProductToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -252,7 +252,7 @@ namespace ZarnasBooks.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CoverType");
+                    b.ToTable("CoverTypes");
                 });
 
             modelBuilder.Entity("ZarnasBooks.Models.Product", b =>
