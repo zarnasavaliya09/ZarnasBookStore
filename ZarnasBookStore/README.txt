@@ -277,3 +277,23 @@ build and check error
 
 added index file and upsert layout file
 
+20230417
+1136
+ "DataTables warning: table id=tblData - Ajax error" issue in your DataTable implementation.
+i did mistakes in startup.cs
+endpoints.MapAreaControllerRoute(
+                     name: "defaultArea",
+                     areaName: "Customer",
+                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                     delete this one and add
+
+                     endpoints.MapAreaControllerRoute(
+                     name: "defaultArea",
+                     areaName: "Customer",
+                     pattern: "{controller=Home}/{action=Index}/{id?}");
+run it again and resolve it..
+
+now, add product controller GetAll method and Delete method
+
+
