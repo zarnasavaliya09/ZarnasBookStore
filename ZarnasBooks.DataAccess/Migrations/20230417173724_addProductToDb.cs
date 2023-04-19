@@ -12,14 +12,14 @@ namespace ZarnasBooks.DataAccess.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(nullable: true),
-                    Description = table.Column<string>(nullable: true),
-                    ISBN = table.Column<string>(nullable: true),
-                    Author = table.Column<string>(nullable: true),
-                    ListPrice = table.Column<double>(nullable: false),
-                    ImageUrl = table.Column<string>(nullable: true),
-                    CategoryId = table.Column<int>(nullable: false),
-                    CoverTypeId = table.Column<int>(nullable: false)
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ISBN = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Author = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ListPrice = table.Column<double>(type: "float", nullable: false),
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CategoryId = table.Column<int>(type: "int", nullable: false),
+                    CoverTypeId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
