@@ -295,6 +295,12 @@ endpoints.MapAreaControllerRoute(
 run it again and resolve it..
 
 now, add product controller GetAll method and Delete method
+20230419
+1602
+now add product database into the home screen
+so, add Conroller in Customer and add view in Index.cshtml of Customer
+now run again.
+see the product item in home screen.
 
 
 
